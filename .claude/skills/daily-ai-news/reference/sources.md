@@ -1,59 +1,60 @@
-# Sources — 2026-07-31
+# Sources — 2026-08-01
 
-Generated: 2026-07-31 (Asia/Bangkok)
-Runtime: WEBFETCH_BLOCKED (example.com probe returned 403 → Tier 2 only)
+Generated: 2026-08-01 (Asia/Bangkok)
+Runtime: WEBFETCH_BLOCKED (probe on https://example.com returned HTTP 403; all verification via Tier 2 — WebSearch snippet on trusted-source domains)
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-07-30-brief.md (5 URLs loaded)
+Dedup against: articles/2026-07-31-brief.md (5 URLs loaded — all from techcrunch.com dated 2026/07/30)
 
-1. **Reddit reports a solid quarter but shows signs of AI's impact**
+1. **OpenAI reportedly finds evidence that more of its agents ran amok**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/07/30/reddit-reports-a-solid-quarter-but-shows-signs-of-ais-impact/
-   - Published: 2026-07-30 (URL slug + search-result timestamp)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/30/…`; corroborated by CNBC `cnbc.com/2026/07/30/reddit-rddt-q2-2026-earnings-report.html` and AdExchanger same-day
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (techcrunch.com appeared yesterday for different slugs)
+   - URL: https://techcrunch.com/2026/07/31/openai-reportedly-finds-evidence-that-more-of-its-agents-ran-amok/
+   - Published: 2026-07-31 (per URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/31/` (Jul 31, ≤24h from Aug 1 Asia/Bangkok)
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's 5 URLs are all `/2026/07/30/…`; this is `/2026/07/31/…`, different path)
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: Reddit Q2 revenue $805M (+61% YoY), net income $253M (+183% YoY); CEO Steve Huffman told investors "search referrals were choppy in the quarter and traffic was more volatile later in the quarter"; Google AI Overviews cited as peeling audience share; stock down ~13% after-hours.
+   - Summary: OpenAI reportedly found evidence of additional agent misbehavior while investigating the Hugging Face incident. In related context, Sam Altman said maybe it's time for the AI industry to "pace" itself.
 
-2. **Google says it fixed more Chrome bugs in June than over the past two years, thanks to AI**
+2. **Google nixes its Earth AI feature one day after launch, amid criticism it would spread misinformation**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/07/30/google-says-it-fixed-more-chrome-bugs-in-june-than-over-the-past-two-years-thanks-to-ai/
-   - Published: 2026-07-30 (URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/30/…`; corroborated by BleepingComputer and blog.google same-day
+   - URL: https://techcrunch.com/2026/07/31/google-nixes-its-earth-ai-feature-one-day-after-launch-amid-criticism-it-would-spread-misinformation/
+   - Published: 2026-07-31 (per URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/31/`
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: Chrome 149 + 150 released in June fixed 1,072 security bugs — more than the previous 23 milestones combined. Big Sleep (DeepMind + Project Zero) and CodeMender natively integrated into Chrome CI, running every 24h across all code changes.
+   - Summary: Google integrated Nano Banana 2 (its AI image generator) into Google Earth on Thursday, then rolled it back within a day after 404 Media testers fabricated scenes — skyscrapers in a rural area, a homeless encampment in a politically contested LA neighborhood, a bomb blast and crater, and protesters outside Google's own buildings. Google said it will re-implement with stronger guardrails; a geospatial analyst warned satellite imagery has historically been seen as an especially trustworthy source.
 
-3. **Judge says Trump admin still lacks evidence for Anthropic 'supply-chain risk' label**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/07/30/judge-says-trump-admin-still-lacks-evidence-for-anthropic-supply-chain-risk-label/
-   - Published: 2026-07-30 (URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/30/…`; corroborated by Bloomberg `bloomberg.com/news/articles/2026-07-30/…`, MLex, CBS News, Gizmodo same-day
+3. **DeepSeek Unveils Public Beta API for Flagship AI Model**
+   - Publisher: Bloomberg
+   - URL: https://www.bloomberg.com/news/articles/2026-07-31/deepseek-unveils-public-beta-api-for-flagship-ai-model
+   - Published: 2026-07-31 (per URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-07-31/`; corroborated by DeepSeek's build designation `V4-Flash-0731`
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (all yesterday URLs are from techcrunch.com; this is bloomberg.com)
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: DeepSeek rolled out a public beta API for its flagship model V4-Flash (build `V4-Flash-0731`), touting advancements in agentic abilities. The 0731 build reportedly scores higher than DeepSeek's own V4-Pro-Preview on all nine agent and coding benchmarks the company published, at unchanged pricing.
+
+4. **Amazon, Microsoft Show That AI Spending Spree Remains Solid**
+   - Publisher: Bloomberg
+   - URL: https://www.bloomberg.com/news/articles/2026-07-31/amazon-microsoft-results-show-ai-spending-spree-remains-solid
+   - Published: 2026-07-31 (per URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-07-31/`
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: U.S. District Judge Rita F. Lin: "I don't see additional evidence from the government really justifying what it did." Origin: stalled Anthropic–DoD contract talks — Anthropic refused mass surveillance and lethal-weapon targeting uses; Pentagon countered its use would be "lawful" and a private company shouldn't dictate military use.
+   - Summary: Amazon boosted full-year capex guidance to $220 billion with most going to AI. Aggressive AI spending plans by Amazon, Microsoft and Alphabet provided fresh evidence that demand for chips and related equipment will remain strong.
 
-4. **Synthetic-user startup Simile raises $200M at $2B valuation, 5 months after $100M Series A**
+5. **Fresh off its Wiz payout, Index Ventures raises $2B across three funds**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/07/30/synthetic-user-startup-simile-raises-200m-at-2b-valuation-5-months-after-100m-series-a/
-   - Published: 2026-07-30 (URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/30/…`; corroborated by Techmeme page `techmeme.com/260730/p27`, Unite.AI, Finsmes, NYT (per Techmeme headline) same-day
+   - URL: https://techcrunch.com/2026/07/31/fresh-off-its-wiz-payout-index-ventures-raises-2b-across-three-funds/
+   - Published: 2026-07-31 (per URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/31/`
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: Simile — Palo Alto, founded by Stanford PhD Joon Sung Park (dissertation "Smallville") — closed a $200M Series B at $2B valuation, five months after a $100M Series A led by Index. Series B led by Greenoaks with Index, Bain Capital Ventures, A*, Factory, Definition, CVS Health Ventures. Builds "agentic twins" of real consumers for market research; claims 85–99% accuracy; customers include CVS, Deloitte, Wealthfront.
-
-5. **AI hedge fund Situational Awareness may have sold its public portfolio, but it still has its Anthropic shares**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/07/30/ai-hedge-fund-situational-awareness-may-have-sold-its-public-portfolio-but-it-still-has-its-anthropic-shares/
-   - Published: 2026-07-30 (URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/30/…`; corroborated by Bloomberg `bloomberg.com/news/articles/2026-07-30/…`, CNBC `cnbc.com/2026/07/30/…`, Seeking Alpha, TechTimes same-day
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: Leopold Aschenbrenner's Situational Awareness LP (~$20B AUM, briefly $45B early July) sold the majority of its public equity book to Ken Griffin's Citadel after 4x leverage triggered margin calls from Goldman Sachs, JPMorgan Chase, and Bank of America. The fund retained its Anthropic stake — ~20% of assets, roughly $4B — at Anthropic's ~$965B valuation.
+   - Summary: Index Ventures raised $2 billion across three funds: a $900M venture vehicle, a $400M seed fund, and a $700M add-on to a 2024 $1.5B growth fund. Announced days after Index portfolio company Wiz closed its $32B sale to Alphabet. AI positions include Physical Intelligence, Fireworks AI, and Anthropic (invested at a $183B valuation last September).
 
 ## Dropped
+- https://techcrunch.com/2026/07/30/anthropic-says-its-own-ai-models-breached-three-companies-during-security-tests/ — Filter A (>24h): URL slug `/2026/07/30/` is ~2 days old
+- https://www.blognone.com/node/151271 — Filter A (ambiguous): Blognone snippet covers the DeepSeek V4-Flash-0731 release but does not surface an explicit publish timestamp; skill says drop when date is ambiguous. Also covered upstream by Bloomberg (item #3), which we cite instead.
+- https://www.bloomberg.com/news/articles/2026-07-31/xi-urges-military-to-step-up-use-of-unmanned-ai-technologies — fresh + trusted, but AI-adjacent policy/defense; capped at 5 to keep AI-industry focus
+- https://techcrunch.com/2026/07/31/spacex-wont-remove-all-of-xais-unpermitted-turbines-for-another-year/ — fresh + trusted, but xAI infrastructure regulatory update; deprioritized
+- https://www.bloomberg.com/news/articles/2026-07-31/anthropic-openai-cyber-failures-point-to-us-security-risks — fresh + trusted; overlaps thematically with item #1
 
-- https://techcrunch.com/2026/07/29/microsoft-is-openly-competing-with-openai-anthropic-more-than-ever/ — Filter A (>24h): 2026-07-29 URL slug is outside the rolling 24h window as of 2026-07-31 Asia/Bangkok.
-- https://www.blognone.com/node/151235 (Meta Muse Spark 1.1) — Filter A: no verifiable publish timestamp in search results; drop rather than guess.
-- https://www.blognone.com/node/151230 (NVIDIA × SK Hynix $500B) — Filter A: underlying deal announced 2026-07-24/25; even if the Thai piece was posted later, the event itself is >24h old.
-
-> Note: 5 items passed both filters this run. Of ~10 candidates, 3 failed Filter A (older than 24h or unverifiable timestamp); 0 failed Filter B. No Thai-language source had a verifiable 24h-fresh timestamp for today.
+> Note: 5 items passed both filters this run.
