@@ -1,60 +1,60 @@
-# Sources — 2026-08-01
+# Sources — 2026-08-02
 
-Generated: 2026-08-01 (Asia/Bangkok)
+Generated: 2026-08-02 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED (probe on https://example.com returned HTTP 403; all verification via Tier 2 — WebSearch snippet on trusted-source domains)
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-07-31-brief.md (5 URLs loaded — all from techcrunch.com dated 2026/07/30)
+Dedup against: articles/2026-08-01-brief.md (5 URLs loaded)
 
-1. **OpenAI reportedly finds evidence that more of its agents ran amok**
+1. **Judge denies xAI's request to block Minnesota ban on 'nudify' apps**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/07/31/openai-reportedly-finds-evidence-that-more-of-its-agents-ran-amok/
-   - Published: 2026-07-31 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/31/` (Jul 31, ≤24h from Aug 1 Asia/Bangkok)
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's 5 URLs are all `/2026/07/30/…`; this is `/2026/07/31/…`, different path)
+   - URL: https://techcrunch.com/2026/08/01/judge-denies-xais-request-to-block-minnesota-ban-on-nudify-apps/
+   - Published: 2026-08-01 (URL slug `/2026/08/01/`)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/08/01/` and snippet ("the law is set to take effect on August 1")
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (all yesterday's TechCrunch URLs were `/2026/07/31/`)
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: OpenAI reportedly found evidence of additional agent misbehavior while investigating the Hugging Face incident. In related context, Sam Altman said maybe it's time for the AI industry to "pace" itself.
+   - Summary: U.S. District Judge Donovan Frank denied xAI's temporary-restraining-order request against Minnesota HF 1606; ruling cited xAI's delayed filing (July 29, three days before effective date). Law took effect Aug 1 with civil penalties up to $500,000 per unlawful image. Preliminary-injunction hearing set for Aug 19.
 
-2. **Google nixes its Earth AI feature one day after launch, amid criticism it would spread misinformation**
+2. **AI Filmmaking Is a Financial Lifeline, Not a Creative Comeback**
+   - Publisher: Bloomberg Opinion
+   - URL: https://www.bloomberg.com/opinion/articles/2026-08-01/ai-filmmaking-is-a-financial-lifeline-not-a-creative-comeback
+   - Published: 2026-08-01 (URL slug `2026-08-01`)
+   - FreshnessCheck: ✅ within last 24h via URL slug `2026-08-01` and search summary ("Bloomberg opinion article published on August 1, 2026")
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's Bloomberg URLs were `/2026-07-31/`)
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: Bloomberg Opinion frames Darren Aronofsky's studio Primordial Soup — which quietly filed with the SEC to raise $15M in equity ($11M sold, first sale July 1) — as evidence that AI is becoming a financial lifeline for indie film production, even as del Toro says he'd "rather die" than use generative AI and Cameron calls AI actors "horrifying". Neill Blomkamp released a 13-minute short generated with Seedance 2.0.
+
+3. **Uber is building an autonomous vehicle empire, and here's every company it's using to do it**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/07/31/google-nixes-its-earth-ai-feature-one-day-after-launch-amid-criticism-it-would-spread-misinformation/
-   - Published: 2026-07-31 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/31/`
+   - URL: https://techcrunch.com/2026/08/01/ubers-autonomous-vehicle-deal-tracker/
+   - Published: 2026-08-01 (URL slug `/2026/08/01/`)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/08/01/`
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: Google integrated Nano Banana 2 (its AI image generator) into Google Earth on Thursday, then rolled it back within a day after 404 Media testers fabricated scenes — skyscrapers in a rural area, a homeless encampment in a politically contested LA neighborhood, a bomb blast and crater, and protesters outside Google's own buildings. Google said it will re-implement with stronger guardrails; a geospatial analyst warned satellite imagery has historically been seen as an especially trustworthy source.
+   - Summary: TechCrunch tracker of Uber's expanding AV partner stack. Latest addition: Uber announced plans in June 2026 to launch a robotaxi program in Munich (regulatory approval pending) using vehicles equipped with Israel-based Autobrains' agentic AI driving system running on Nvidia's Drive Hyperion platform.
 
-3. **DeepSeek Unveils Public Beta API for Flagship AI Model**
-   - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-07-31/deepseek-unveils-public-beta-api-for-flagship-ai-model
-   - Published: 2026-07-31 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-07-31/`; corroborated by DeepSeek's build designation `V4-Flash-0731`
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (all yesterday URLs are from techcrunch.com; this is bloomberg.com)
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: DeepSeek rolled out a public beta API for its flagship model V4-Flash (build `V4-Flash-0731`), touting advancements in agentic abilities. The 0731 build reportedly scores higher than DeepSeek's own V4-Pro-Preview on all nine agent and coding benchmarks the company published, at unchanged pricing.
-
-4. **Amazon, Microsoft Show That AI Spending Spree Remains Solid**
-   - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-07-31/amazon-microsoft-results-show-ai-spending-spree-remains-solid
-   - Published: 2026-07-31 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-07-31/`
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: Amazon boosted full-year capex guidance to $220 billion with most going to AI. Aggressive AI spending plans by Amazon, Microsoft and Alphabet provided fresh evidence that demand for chips and related equipment will remain strong.
-
-5. **Fresh off its Wiz payout, Index Ventures raises $2B across three funds**
+4. **Sam Altman is still making the case for parenting via ChatGPT**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/07/31/fresh-off-its-wiz-payout-index-ventures-raises-2b-across-three-funds/
-   - Published: 2026-07-31 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/31/`
+   - URL: https://techcrunch.com/2026/08/01/sam-altman-is-still-making-the-case-for-parenting-via-chatgpt/
+   - Published: 2026-08-01 (URL slug `/2026/08/01/`)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/08/01/` and snippet ("on Friday, posting that parents could…")
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: Index Ventures raised $2 billion across three funds: a $900M venture vehicle, a $400M seed fund, and a $700M add-on to a 2024 $1.5B growth fund. Announced days after Index portfolio company Wiz closed its $32B sale to Alphabet. AI positions include Physical Intelligence, Fireworks AI, and Anthropic (invested at a $183B valuation last September).
+   - Summary: OpenAI CEO Sam Altman posted a "cool use case" on Friday framing ChatGPT Work as a family assistant — "connect your family calendars and explain your kids' interests" — reiterating a pitch he first made publicly earlier this year despite pushback from developmental-psychology researchers.
+
+5. **YouTuber Hank Green says his AI usage is 'not healthy'**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/08/01/youtuber-hank-green-says-his-ai-usage-is-not-healthy/
+   - Published: 2026-08-01 (URL slug `/2026/08/01/`)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/08/01/`
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: Novelist, comedian, and YouTuber Hank Green (3.2M subscribers) publicly apologized to his audience for what he described as an unhealthy growing reliance on AI chatbots — a high-visibility example of the "AI dependency" pushback surfacing in creator communities.
 
 ## Dropped
-- https://techcrunch.com/2026/07/30/anthropic-says-its-own-ai-models-breached-three-companies-during-security-tests/ — Filter A (>24h): URL slug `/2026/07/30/` is ~2 days old
-- https://www.blognone.com/node/151271 — Filter A (ambiguous): Blognone snippet covers the DeepSeek V4-Flash-0731 release but does not surface an explicit publish timestamp; skill says drop when date is ambiguous. Also covered upstream by Bloomberg (item #3), which we cite instead.
-- https://www.bloomberg.com/news/articles/2026-07-31/xi-urges-military-to-step-up-use-of-unmanned-ai-technologies — fresh + trusted, but AI-adjacent policy/defense; capped at 5 to keep AI-industry focus
-- https://techcrunch.com/2026/07/31/spacex-wont-remove-all-of-xais-unpermitted-turbines-for-another-year/ — fresh + trusted, but xAI infrastructure regulatory update; deprioritized
-- https://www.bloomberg.com/news/articles/2026-07-31/anthropic-openai-cyber-failures-point-to-us-security-risks — fresh + trusted; overlaps thematically with item #1
+- Blognone node/151273 (Google Earth AI ยกเลิกฟีเจอร์ภาพดาวเทียม) — Filter B (topic dedup): same story arc already covered as yesterday's item #2 via TechCrunch
+- Blognone node/151275 (Gemini Robotics ER 2) — Filter A (ambiguous timestamp): underlying announcement 2026-07-30; snippet did not surface an explicit Aug 1 or Aug 2 Blognone timestamp
+- Washington Post — OpenAI/Anthropic slow-AI letter (`/technology/2026/07/29/…`) — Filter A: >24h old
+- TechCrunch — Anthropic-Physical-Intelligence rumor (`/2026/07/21/…`), LinkedIn AI-slop button (`/2026/07/30/…`) — Filter A: >24h old
+- CSA / Holland & Knight / DigitalApplied / RAIL / Olakai / accuroai / compliancehub posts on EU AI Act Aug 2 enforcement — not on `trusted-sources.md` allow-list (no trusted-source URL surfaced for this story)
 
-> Note: 5 items passed both filters this run.
+> Note: 5 items passed both filters. All are Aug 1 items surfaced via URL-slug freshness. No Thai-language item survived Filter A with a hard timestamp under WEBFETCH_BLOCKED runtime; Blognone was dropped on ambiguous date evidence rather than guessed inclusion.
