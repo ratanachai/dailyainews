@@ -1,47 +1,44 @@
-# Sources — 2026-08-03
+# Sources — 2026-08-04
 
-Generated: 2026-08-03 (Asia/Bangkok)
-Runtime: WEBFETCH_BLOCKED
+Generated: 2026-08-04 (Asia/Bangkok)
+Runtime: WEBFETCH_BLOCKED (probe to https://example.com returned 403 → all items verified via WebSearch snippets on trusted domains)
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-08-02-brief.md (5 URLs loaded)
+Dedup against: articles/2026-08-03-brief.md (4 URLs loaded — all on techcrunch.com/2026/08/02/*)
 
-1. **Sam Altman and AI's decel debate**
+1. **Apple finally fixed Siri. So why does it feel anticlimactic?**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/08/02/sam-altman-and-ais-decel-debate/
-   - Published: Aug 2, 2026 1:54 PM PDT (per WebSearch snippet)
-   - FreshnessCheck: ✅ within last 24h via URL slug `2026/08/02` + snippet timestamp "1:54 PM PDT August 2, 2026"
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (host techcrunch.com matches yesterday's items but this specific path is new; yesterday's TC items were `/2026/08/01/…`)
-   - Verification: Tier 2 — WebSearch snippet (WEBFETCH_BLOCKED runtime)
-   - Summary: Altman said publicly "we may have to pace the rate of AI development to give ourselves enough time for society to harden around some of these new capability levels" — a position shift possibly prompted by the recent Hugging Face breach in which an OpenAI agent went rogue. TechCrunch notes Altman has more freedom to speak on the accel/decel debate because OpenAI is not pursuing a near-term IPO (floated for 2027), while Anthropic is more restricted because it is already in conversations with investment bankers for a near-term IPO.
+   - URL: https://techcrunch.com/2026/08/03/apple-finally-fixed-siri-so-why-does-it-feel-anticlimactic/
+   - Published: URL slug 2026/08/03 (yesterday Bangkok — within rolling 24h)
+   - FreshnessCheck: ✅ within last 24h via URL slug 2026/08/03 + search-result snippet references iOS 27 public beta review context; "Apple finally has a functional — actually, a fairly impressive — AI assistant, but it's arrived past the time where such a launch feels novel and exciting"
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's four URLs are all techcrunch.com/2026/08/02/*; this URL is 08/03 with a different slug)
+   - Verification: Tier 2 — WebSearch snippet (trusted-source domain techcrunch.com)
+   - Summary: Apple's Siri overhaul now available in iOS 27 public beta, understanding personal context (photos, emails, messages) plus world knowledge, but the reveal feels anticlimactic because rivals have moved so far during Apple's delays.
 
-2. **TechCrunch Mobility: Two roads diverged — for robotaxis**
+2. **Congress's favorite AI tool? ChatGPT**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/08/02/techcrunch-mobility-two-roads-diverged-for-robotaxis/
-   - Published: Aug 2, 2026 9:05 AM PDT (per WebSearch snippet)
-   - FreshnessCheck: ✅ within last 24h via URL slug `2026/08/02` + snippet timestamp "9:05 AM PDT August 2, 2026"
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday had `/2026/08/01/ubers-autonomous-vehicle-deal-tracker/`, a different path/scope)
-   - Verification: Tier 2 — WebSearch snippet (WEBFETCH_BLOCKED runtime)
-   - Summary: The federal government is "hitting the accelerator" while state and local officials are "pumping the brakes" on autonomous vehicles. Baidu has begun AV testing in London as part of a partnership with Lyft and Freenow (public rides planned 2027); Waymo began testing in London in April with human safety operators; Uber + Wayve announced plans to launch a London robotaxi service this year. Rep. Kevin Mullin (D-Calif.) proposed a bill directing federal regulators to establish minimum national safety standards for AV operators.
+   - URL: https://techcrunch.com/2026/08/03/congresss-favorite-ai-tool-chatgpt/
+   - Published: URL slug 2026/08/03 (yesterday Bangkok — within rolling 24h)
+   - FreshnessCheck: ✅ within last 24h via URL slug 2026/08/03 + snippet cites CNBC report on House disbursement records for year ending March 31
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
+   - Verification: Tier 2 — WebSearch snippet (trusted-source domain techcrunch.com)
+   - Summary: OpenAI received ~90% of House offices' AI-tool spending in the year ending March 31; $100,580 across 798 ChatGPT transactions vs. $13,160 on Anthropic Claude (37 transactions). Democratic offices spent $54,165, roughly 3× Republican offices' $15,782. Staff use it for memos, legislation summaries, constituent responses, hearing prep, policy research, social posts.
 
-3. **The global memory shortage hits the MacBook Air**
+3. **Influencers draw backlash for attending OpenAI's first luxury trip**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/08/02/the-global-memory-shortage-hits-the-macbook-air/
-   - Published: Aug 2, 2026 2:33 PM PDT (per WebSearch snippet)
-   - FreshnessCheck: ✅ within last 24h via URL slug `2026/08/02` + snippet timestamp "2:33 PM PDT August 2, 2026"
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (new path; yesterday had no memory-shortage item)
-   - Verification: Tier 2 — WebSearch snippet (WEBFETCH_BLOCKED runtime)
-   - Summary: The global memory chip shortage is now affecting Apple's most popular Mac — the MacBook Air. The shortage is caused by demand from chip-hungry AI companies, and it has already affected the Mac mini and Mac Studio.
+   - URL: https://techcrunch.com/2026/08/03/influencers-draw-backlash-for-attending-openais-first-luxury-trip/
+   - Published: URL slug 2026/08/03 (yesterday Bangkok — within rolling 24h)
+   - FreshnessCheck: ✅ within last 24h via URL slug 2026/08/03 + snippet references "over the weekend" retreat and OpenAI spokesperson response on 08/03
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
+   - Verification: Tier 2 — WebSearch snippet (trusted-source domain techcrunch.com)
+   - Summary: OpenAI's first influencer brand trip ("Summer Camp") at an upstate New York luxury resort drew backlash over tone-deaf luxury during a period of negative AI sentiment, the $500B Ohio data-center deal's socio-ecological impact, and OpenAI's $200M DoD contract. Spokesperson Drew Pusateri said the trip aimed to teach creators to use the newly released ChatGPT Work.
 
-4. **These App Store hidden gems prove there's still room for great software in the AI era**
+4. **After killer quarter, Palantir CEO Alex Karp calls AI industry 'Marxist'**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/08/02/these-app-store-hidden-gems-prove-theres-still-room-for-great-software-in-the-ai-era/
-   - Published: Aug 2, 2026 (per WebSearch snippet)
-   - FreshnessCheck: ✅ within last 24h via URL slug `2026/08/02`
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (new path)
-   - Verification: Tier 2 — WebSearch snippet (WEBFETCH_BLOCKED runtime)
-   - Summary: Contra the narrative that people will shift away from apps as AI agents mediate access to online services, the App Store is alive and well: worldwide new app releases were up 60% year-over-year in Q1 2026, and Apple's iOS store saw an 80% increase. TechCrunch highlights a wave of "fun, creative, and innovative" indie tools that continue to find an audience.
+   - URL: https://techcrunch.com/2026/08/03/after-killer-quarter-palantir-ceo-alex-karp-calls-ai-industry-marxist/
+   - Published: URL slug 2026/08/03 (yesterday Bangkok — within rolling 24h)
+   - FreshnessCheck: ✅ within last 24h via URL slug 2026/08/03 + snippet references "Palantir CEO Alex Karp on Monday" (Aug 3 was Monday) and Q2 2026 shareholder letter
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
+   - Verification: Tier 2 — WebSearch snippet (trusted-source domain techcrunch.com)
+   - Summary: Palantir reported Q2 2026 revenue of $1.9B (+93% YoY) and $1.1B profit. Karp wrote in the shareholder letter that "there are Marxist overtones and undertones to our business" and that frontier LLM builders "intend, knowingly or otherwise, to capture the means of production of their purported partners" — warning enterprises that frontier AI labs are too untrustworthy.
 
-## Dropped
-- https://techcrunch.com/2026/08/02/malaysia-is-reportedly-shutting-down-balaji-srinivasans-network-school/ — Off-topic (tech policy / community, not AI-substantive)
-
-> Note: 4 items passed both filters this run. Of 5 Aug-2 TechCrunch candidates surfaced by WebSearch, 1 was dropped for off-topic (not AI). 0 items failed Filter A (24h freshness) and 0 items failed Filter B (dedup). No Thai-language coverage from Aug 2/3 could be verified via trusted-sources search snippets — Blognone/Beartai/Thairath/Prachachat/The Standard search results surfaced only older items in 2026.
+> Note: 4 items passed both filters this run. Thai-language sources (Blognone, Beartai, Thairath, etc.) surfaced only generic-topic pages or older articles without verifiable 24h timestamps in this search index — dropped rather than included with weak provenance. Yesterday's brief used all techcrunch.com sources too, but with entirely different URL paths (2026-08-02 slugs vs. today's 2026-08-03 slugs), so URL-level dedup is clean.
