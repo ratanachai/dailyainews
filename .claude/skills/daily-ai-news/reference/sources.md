@@ -1,55 +1,60 @@
-# Sources — 2026-08-06
+# Sources — 2026-08-07
 
-Generated: 2026-08-06 (Asia/Bangkok)
+Generated: 2026-08-07 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-08-05-brief.md (5 URLs loaded — all techcrunch.com /2026/08/04/*)
+Dedup against: articles/2026-08-06-brief.md (5 URLs loaded)
 
-1. **Jeff Dean and other top AI researchers are leaving Google to launch their own startup**
+1. **Mirendil inks $100M+ Google Cloud deal to scale self-improving AI**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/08/05/jeff-dean-and-other-top-ai-researchers-are-leaving-google-to-launch-their-own-startup/
-   - Published: 2026-08-05 (per URL slug + CNBC/Quartz/Yahoo Finance corroboration dated 2026-08-05)
-   - FreshnessCheck: ✅ within last 24h via "URL slug /2026/08/05/" + corroborating outlets (CNBC 2026-08-05, Quartz 080526, Yahoo Finance 2026-08-05)
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday all /2026/08/04/*, this is /2026/08/05/*)
+   - URL: https://techcrunch.com/2026/08/06/exclusive-mirendil-inks-100m-google-cloud-deal-to-scale-self-improving-ai/
+   - Published: 2026-08-06 (per URL slug + search snippet "posted 8 hours ago")
+   - FreshnessCheck: ✅ within last 24h via URL slug 2026-08-06 + snippet "posted 8 hours ago"
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's TechCrunch items were all 2026/08/05 paths; this is 2026/08/06)
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: Jeff Dean leaves Google after 27 years to co-found Discovery Loop, a public-benefit corp automating scientific/engineering research, with Sanjay Ghemawat, Quoc Le, and Oriol Vinyals as co-founders; Google is a founding investor + cloud partner, Radical Ventures + Khosla Ventures co-lead the seed. The Information also reports Demis Hassabis stepping aside as DeepMind CEO in the same reshuffle.
+   - Summary: AI lab Mirendil signed a multiyear partnership with Google Cloud worth upward of $100M to source compute — TPUs, Nvidia GPUs, and managed training clusters — for its self-improving (recursive self-improvement) AI research; founders come from Anthropic and the thesis is automating scientific discovery in medicine, biology, and materials science.
 
-2. **Anthropic is hiring an AI chip design team**
+2. **ChatGPT brings unlimited text chats to free users (GPT-5.6 Luna becomes default)**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/08/05/anthropic-is-hiring-an-ai-chip-design-team/
-   - Published: 2026-08-05 (per URL slug + Quartz "080526" + Technology.org 2026-08-06 dated writeup)
-   - FreshnessCheck: ✅ within last 24h via "URL slug /2026/08/05/" + Quartz slug 080526 + Technology.org 2026-08-06
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (host matches TechCrunch but path /2026/08/05/... is fresh; yesterday's Anthropic item was the Anthropic-Volta $10B compute deal at /2026/08/04/anthropic-signs-10-billion-deal-with-ai-cloud-startup-volta/)
+   - URL: https://techcrunch.com/2026/08/06/openai-brings-unlimited-chatgpt-text-chats-to-free-users/
+   - Published: 2026-08-06 (per URL slug + multiple secondary sources dated Aug 6)
+   - FreshnessCheck: ✅ within last 24h via URL slug 2026-08-06
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: Anthropic stands up a "custom silicon team" to co-design chips with Claude models, targeting roughly 50% cuts in per-token inference cost. Clive Chan (ex-OpenAI chip team, previously Tesla Dojo) anchors technical leadership; salaries $320k–$485k. Anthropic keeps working with Nvidia, AMD, AWS, and Google in parallel.
+   - Summary: OpenAI announced GPT-5.6 Luna becomes the default model for Free and Go users with unlimited text chats rolling out this week; a "Think" button for extra reasoning arrives next week under abuse safeguards; limits remain on file uploads, image generation, and other tools; internal eval shows 62% fewer factual errors on Luna vs GPT-5.5-Instant, ChatGPT past 1B weekly users.
 
-3. **Meta launches Muse Code, an AI agent for large code bases**
+3. **OpenAI's new AI smart speaker will reportedly sell for between $300 and $400**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/08/05/meta-launches-muse-code-an-ai-agent-for-large-code-bases/
-   - Published: 2026-08-05 (per URL slug + 9to5Mac 2026-08-05 + MarkTechPost 2026-08-05 + CNBC 2026-08-05)
-   - FreshnessCheck: ✅ within last 24h via "URL slug /2026/08/05/" + multiple corroborating outlets dated 2026-08-05
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (Meta not covered yesterday at all)
+   - URL: https://techcrunch.com/2026/08/06/openais-new-ai-smart-speaker-will-reportedly-sell-for-between-300-400/
+   - Published: 2026-08-06 (per URL slug + secondary sources dated Aug 6)
+   - FreshnessCheck: ✅ within last 24h via URL slug 2026-08-06
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: Meta releases Muse Code in beta — a terminal coding agent for macOS/Linux powered by Muse Spark 1.2 that fans out to sub-agents in isolated worktrees for large-repo work, with a local event log to resume after crashes. Installs via single command; competes directly with Claude Code and ChatGPT Codex.
+   - Summary: Report says OpenAI's first hardware device — from the $6.5B Jony Ive-led io acquisition — will be a donut-shaped, battery-powered smart speaker with moving parts, camera sensors, and dynamic lighting priced $300–$400, launching in 2027.
 
-4. **Trump's DOJ gains oversight of OpenAI's green-card employee sponsorships**
+4. **Ex-Spotify employees raise $10M to bring the AI behind its recommendations to e-commerce (Malachyte)**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/08/05/trumps-doj-gains-oversight-of-openais-green-card-employee-sponsorships/
-   - Published: 2026-08-05 (per URL slug + Axios 2026-08-04 corroboration + American Bazaar 2026-08-05 + Quartz 080526)
-   - FreshnessCheck: ✅ within last 24h via "URL slug /2026/08/05/" + Axios 2026-08-04 + American Bazaar 2026-08-05
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (OpenAI hiring-oversight story not in yesterday's brief; yesterday's OpenAI item was Apple v. OpenAI trade-secret injunction at /2026/08/04/apple-says-more-ex-employees-may-have-taken-confidential-data-to-openai/)
+   - URL: https://techcrunch.com/2026/08/06/ex-spotify-employees-raise-10m-to-bring-the-ai-behind-its-recommendations-to-e-commerce/
+   - Published: 2026-08-06 (per URL slug + secondary sources dated Aug 6)
+   - FreshnessCheck: ✅ within last 24h via URL slug 2026-08-06
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: OpenAI and its former subsidiary Statsig sign a $3.2M settlement (US$1.2M fine + US$2M restitution fund) with the DOJ Civil Rights Division, plus 3 years of oversight over PERM/green-card hiring — after allegations they failed to post PERM roles publicly, required paper applications, and advertised via late-night radio to shield jobs held by sponsored foreign workers. OpenAI does not admit wrongdoing.
+   - Summary: Three ex-Spotify engineers (Sidd Motwani, Ian Anderson, Shivaditya Sinha) — who built Vector AI powering ~90% of Spotify's recommendations to 800M users — raised a $10M seed co-led by Bessemer Venture Partners + Gradient Ventures (with Harpoon) for Malachyte, an intent/behavior-prediction stack for e-commerce; early customer HalloweenCostumes.com reported +31% revenue per visitor.
 
-5. **MacPaw taps Liquid AI to offer on-device inference to devs building for its app store**
+5. **OpenAI says Apple's own security practices undermine its trade secrets case**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/08/05/macpaw-taps-liquid-ai-to-offer-on-device-inference-to-devs-building-for-its-app-store/
-   - Published: 2026-08-05 (per URL slug + 9to5Mac 2026-08-05 + Forbes 2026-08-05 + MacTech 2026-08-05)
-   - FreshnessCheck: ✅ within last 24h via "URL slug /2026/08/05/" + multiple corroborating outlets dated 2026-08-05
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (on-device inference / MacPaw not covered yesterday)
+   - URL: https://techcrunch.com/2026/08/06/openai-says-apples-own-security-practices-undermine-its-trade-secrets-case/
+   - Published: 2026-08-06 (per URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug 2026-08-06
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: MacPaw and Liquid AI announce a long-term partnership to co-develop a local-AI stack for Mac — combining Liquid Foundation Models (LFMs) tuned for macOS with MacPaw's Elix (on-device inference) and Mnemos (memory) tech. First product is MacPaw's Eney assistant later this year; MacPaw plans to expose the local-inference layer to developers on its Setapp store.
+   - Summary: OpenAI's motion to dismiss Apple's trade-secrets lawsuit argues Apple's own security practices and offboarding procedures weaken the claim that the disputed information qualifies as legally protected trade secrets.
 
 ## Dropped
-- https://techcrunch.com/2026/08/05/techcrunch-disrupt-2026s-real-world-ai-stage-features-robots-automated-factories-and-extinct-animals/ — event/conference promo, not news
-- https://techcrunch.com/2026/08/05/klaviyo-acquires-elias-torres-agency-in-full-circle-reunion-for-tech-founders/ — M&A tangentially AI-adjacent; deprioritized in favor of stronger stories
+
+- https://www.blognone.com/node/151257 (Gemini Spark launches in Thailand) — Filter A ambiguous: Blognone /node/N URLs carry no date; snippet does not surface publish date; node number sits between items known to date from July 31 - early Aug, likely > 24h. Dropped per "Date ambiguous → DROP".
+- https://www.blognone.com/node/151267 (Anthropic Claude hack — 3 organizations) — Filter A: underlying event disclosed 2026-07-31 per corroborating Thai sources (thestandard.co, iT24Hrs); >24h old.
+- https://www.blognone.com/node/151207 (OpenAI model penetrates Hugging Face) — Filter A: underlying event dated "a few days ago" per snippet; corroborating sources indicate late July / early Aug; ambiguous > 24h. Dropped.
+- https://www.blognone.com/node/151211 (Moonshot AI + AMD MI355X optimization) — Filter A: source dataconomy.com dated 2026-08-03 for the underlying story; > 24h old.
+- https://www.blognone.com/node/151302 (Cloudflare Wallets for AI Agents) — Filter A: Cloudflare's press release + Fortune coverage dated 2026-08-04; > 24h from 2026-08-07 Asia/Bangkok. Dropped.
+- https://techcrunch.com/2026/08/06/gen-z-dating-apps-like-ditto-ditch-swiping-in-favor-of-ai-matchmaking/ — de-prioritized (not filter fail); topic outside AI-industry core, and 5 stronger AI-industry candidates already selected from same date.
