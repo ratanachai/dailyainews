@@ -1,59 +1,56 @@
-# Sources — 2026-08-13
+# Sources — 2026-08-14
 
-Generated: 2026-08-13 (Asia/Bangkok)
+Generated: 2026-08-14 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-08-12-brief.md (5 URLs loaded)
+Dedup against: articles/2026-08-13-brief.md (5 URLs loaded)
 
-1. **Nvidia signs MoUs with BlackRock, Goldman, Apollo, Blackstone, Brookfield, KKR — mobilizing $500B for AI infrastructure**
+1. **Anthropic in Talks to Buy AI Startup Decart for $6 Billion**
    - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/newsletters/2026-08-12/nvidia-calms-credit-markets-with-ai-capital-consortium
-   - Published: 2026-08-12 (per URL slug + snippet "Nvidia CEO Jensen Huang announcing that a coalition of major investment firms including BlackRock and Goldman Sachs were lining up more than $500 billion")
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-08-12/` + snippet describes today's announcement
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's Bloomberg URLs were `/2026-08-11/coreweave-...` and `/2026-08-11/sonos-...`)
+   - URL: https://www.bloomberg.com/news/articles/2026-08-13/anthropic-said-in-talks-to-buy-ai-startup-decart-for-6-billion
+   - Published: August 13, 2026 (per URL slug + snippet)
+   - FreshnessCheck: ✅ within last 24h — URL slug "2026-08-13" + snippet "Anthropic PBC is in talks to buy the artificial intelligence startup Decart AI for about $6 billion"
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's Bloomberg URL was `2026-08-12/nvidia-calms-credit-markets-with-ai-capital-consortium` — different date, different story)
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: Nvidia signed MoUs with Apollo, Blackstone, BlackRock, Brookfield, Goldman Sachs, and KKR to establish financing platforms that will mobilize more than $500B in third-party capital for hyperscalers, frontier AI labs, and enterprises to buy Nvidia hardware and build data centers. BlackRock CEO Larry Fink compared the initiative to the creation of mortgage-backed securities in the 1970s.
+   - Summary: Anthropic is in talks to acquire Decart AI for ~$6B (its largest known acquisition to date); Decart makes software that reduces the cost of training/operating AI by making chips more efficient — the deal aims to help Anthropic's compute infrastructure absorb surging Claude demand.
 
-2. **Google unveils Pixel 11 lineup, Pixel Watch 5, Pixel Tag, and heavy Gemini push at Made by Google 2026**
+2. **OpenAI Introduces Ultrafast Mode — GPT-5.6 Sol at 14× the Speed**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/08/12/google-unveils-pixel-11-lineup-new-airtag-rival-and-gemini-features-at-made-by-google-2026/
-   - Published: 2026-08-12 (per URL slug `/2026/08/12/` + snippet "Google held its Made by Google 2026 event on Wednesday")
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/08/12/` + snippet confirms Wednesday event
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's TechCrunch URLs were `/2026/08/11/...`)
+   - URL: https://techcrunch.com/2026/08/13/openai-introduces-ultrafast-a-new-mode-that-makes-gpt-5-6-sol-work-at-14x-the-speed/
+   - Published: August 13, 2026 (URL slug 2026/08/13)
+   - FreshnessCheck: ✅ within last 24h — URL slug "2026/08/13" + snippet "On August 13, 2026, OpenAI unveiled Ultrafast, a new service tier that runs GPT-5.6 Sol up to 14× faster"
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (host `techcrunch.com` overlaps but this specific slug is not among yesterday's 5 URLs)
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: Google announced the Pixel 11, Pixel 11 Pro, Pixel 11 Pro XL, Pixel 11 Pro Fold, Pixel Watch 5, and Pixel Tag (an AirTag competitor). Pixel 11 starts at $899; Pro at $1,099. Powered by Tensor G6 with heavy Gemini integration — new Wispr Flow-like transcription, live translation across content, camera capture improvements, ASL translation, and a voice-input feature called Rambler.
+   - Summary: OpenAI launched Ultrafast, a new API service tier that runs GPT-5.6 Sol up to 14× faster (up to 750 output tokens/second) powered by Cerebras. Initially tested with companies in coding, commerce, financial research, and support workloads in real production.
 
-3. **AI coding startup Cognition (maker of Devin) in talks for $40B+ raise, up from $26B less than three months ago**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/08/12/ai-coding-startup-cognition-reportedly-already-in-talks-to-raise-at-40b-valuation/
-   - Published: 2026-08-12 (per URL slug `/2026/08/12/` + snippet "Cognition, maker of the AI coding agent Devin, is reportedly already talking to investors about raising another funding round with a big leap in valuation, after it raised $1 billion at a $26 billion valuation in May")
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/08/12/` + snippet references recent May raise
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
+3. **Testing Ads in ChatGPT — OpenAI expands ad experiments to 5 new markets**
+   - Publisher: OpenAI (primary announcement)
+   - URL: https://openai.com/index/testing-ads-in-chatgpt/
+   - Published: August 13, 2026 (per snippet)
+   - FreshnessCheck: ✅ within last 24h — snippet "on August 13, 2026, OpenAI announced testing ads in ChatGPT. As of August 11, 2026, ChatGPT Ads had launched in the United Kingdom, Mexico, Brazil, Japan, and South Korea"
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (openai.com not present in yesterday's 5 URLs)
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: Cognition is in early talks to raise over $1B at a $40B+ valuation, up more than 50% from the $26B valuation it hit less than three months ago. New round is tied to reaching a $1B annualized revenue run rate. Prior raise was in May at $26B. Devin customers include Citi, Mercedes-Benz, Goldman Sachs, and both the U.S. Army and Navy.
+   - Summary: OpenAI publicly confirmed the ChatGPT-ads pilot expansion — ads are live in the UK, Mexico, Brazil, Japan, and South Korea as of Aug 11, with intent to expand further. Marks OpenAI's most explicit monetization pivot beyond subscriptions and API.
 
-4. **AI Safety debate at Ai4 conference: Hinton, Fei-Fei Li, Andrew Ng argue for keeping AI open — while disagreeing on tactics**
+4. **NVIDIA's $500B Plan: The Real Play Is a Secondary Market for Aging GPUs**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/08/12/as-ai-safety-concerns-mount-three-pioneers-make-the-case-for-staying-open/
-   - Published: 2026-08-12 (per URL slug `/2026/08/12/`)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/08/12/`
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
+   - URL: https://techcrunch.com/2026/08/13/nvidias-new-500b-plan-is-risky-but-brilliant-especially-for-aging-gpus/
+   - Published: August 13, 2026 (URL slug 2026/08/13)
+   - FreshnessCheck: ✅ within last 24h — URL slug "2026/08/13" + snippet dated to Aug 13 reporting on this week's disclosure
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS. Yesterday covered the MoU structure (Bloomberg 2026-08-12); this is a distinct follow-up analysis of the Nvidia guarantee mechanism + secondary market for aging GPUs used as collateral. Different URL, different publisher, different angle — per SKILL.md's URL-level dedup rule, allowed.
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: At the Ai4 conference in Las Vegas, Geoffrey Hinton, Fei-Fei Li, and Andrew Ng — three AI pioneers — publicly made the case that AI development should remain open even as safety concerns escalate. The three disagreed on particular tactics but converged on openness as the direction.
+   - Summary: The under-reported part of the $500B consortium: Nvidia agreed to guarantee — with its own money — that GPUs used as collateral will retain their value. The bigger goal is creating a functioning secondary market for aging GPUs so financing partners have real recourse and depreciation risk is bounded.
 
-5. **Amazon will train AI on Twitch streamers' content by default unless they opt out**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/08/12/amazon-will-train-on-twitch-streamers-content-by-default-unless-they-opt-out/
-   - Published: 2026-08-12 (per URL slug `/2026/08/12/`)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/08/12/`
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
+5. **OpenAI เปิดตัวโมเดลยอดนักแฮ็ก GPT-5.6-Cyber ต้องขอใช้ผ่านโครงการ Daybreak**
+   - Publisher: Blognone
+   - URL: https://www.blognone.com/node/151365
+   - Published: August 13, 2026 (per snippet content date)
+   - FreshnessCheck: ✅ within last 24h — snippet "On August 13, 2026, OpenAI expanded its Project Daybreak cybersecurity initiative"
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (blognone.com not present in yesterday's 5 URLs)
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: Twitch announced it will use creators' content to help train generative AI models for Amazon by default. Streamers must actively opt out to avoid having their video/audio content used for AI model training. This inverts the more common opt-in default and puts the burden on the creator.
+   - Summary: OpenAI expanded Project Daybreak — access split into 2 tiers (Daybreak Blue = frontier general models like GPT-5.6 Sol with cyber safeguards; Daybreak Red = purpose-trained GPT-5.6-Cyber for vulnerability research). Demonstration: GPT-5.6-Cyber found two high-severity vulnerabilities in Chrome's V8 engine (CVE-2026-15903), disclosed to Google.
 
 ## Dropped
-- https://techcrunch.com/2026/08/12/some-claude-users-are-mad-that-anthropics-new-watermarks-will-catch-them-cheating-at-their-jobs-classes/ — dropped for topic-level overlap with yesterday's #2 (Anthropic watermark); a follow-up angle but too close in theme so soon after. URL itself would have passed Filter B.
-- https://techcrunch.com/2026/08/12/ai-nuclear-power-firm-fermi-finally-has-a-new-ceo/ — passed both filters; deprioritized for space (personnel/exec-appointment story, less strategic weight than Nvidia/Cognition/AI-safety).
-- https://techcrunch.com/2026/08/12/pixel-11-has-few-hardware-changes-and-more-gemini/ — same-day sibling story to #2 (Made by Google recap); avoided double-coverage.
-- https://www.blognone.com/node/151344 (Anthropic watermark Thai coverage) — dropped for topic-level overlap with yesterday's #2 even though URL differs.
-
-> Note: 5 items passed both filters this run. Of ~10 candidates, 0 failed Filter A (all URL slugs Aug 12), 0 failed Filter B (no exact URL matches), and 4 were dropped editorially for topic overlap or lower news value.
+- https://techcrunch.com/2026/08/09/anthropic-is-turning-claude-codes-auto-mode-on-by-default/ — Filter A (>24h): URL slug 2026/08/09 is 5 days old, even though the feature goes live today Aug 14. Reporting itself pre-dates the 24h window.
+- https://techcrunch.com/2026/08/11/googles-gemini-app-surges-to-one-billion-users/ — Filter A (>24h): URL slug 2026/08/11 is 3 days old.
+- https://techcrunch.com/2026/08/10/as-ai-led-attacks-multiply-openai-launches-a-new-cyber-model/ — Filter A (>24h): URL slug 2026/08/10 is 4 days old (the Aug 13 Blognone piece above is the fresh follow-up).
