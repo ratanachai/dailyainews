@@ -1,46 +1,51 @@
-# Sources — 2026-08-17
+# Sources — 2026-08-18
 
-Generated: 2026-08-17 (Asia/Bangkok)
-Runtime: WEBFETCH_BLOCKED (probes to example.com + www.anthropic.com returned EGRESS_BLOCKED — Tier 2 only)
+Generated: 2026-08-18 (Asia/Bangkok)
+Runtime: WEBFETCH_BLOCKED
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-08-16-brief.md (4 URLs loaded)
+Dedup against: articles/2026-08-17-brief.md (3 URLs loaded)
 
-1. **Stripe Finalizes Deal to Acquire AI Startup OpenRouter for Over $7 Billion**
+1. **Nvidia Will Back First Phase of OpenAI Ohio Project With as Much as $105 Billion**
    - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-08-16/stripe-nears-deal-to-buy-ai-firm-openrouter-for-over-7-billion
-   - Published: 2026-08-16 (URL slug + Bloomberg dateline)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-08-16/` and TechCrunch mirror published `2026/08/16`
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's Bloomberg URLs were `/2026-08-15/alibaba...` and `/2026-08-15/bond-traders...`; different date + different story)
-   - Verification: Tier 2 — WebSearch snippet (multiple mirrors: Bloomberg, TechCrunch, Fortune, SiliconANGLE all corroborate URL + storyline)
-   - Summary: Stripe finalized an agreement to acquire OpenRouter — an "AI gateway" that lets customers switch between 400+ AI models via one API — for more than $7 billion. Snippet: OpenRouter claims 8M global users and raised at a $1.3B valuation in May, so the price is ~5× that recent round. CEO Alex Atallah calls the startup "Stripe for AI."
+   - URL: https://www.bloomberg.com/news/articles/2026-08-17/nvidia-to-invest-up-to-105-billion-for-openai-data-center-in-ohio
+   - Published: 2026-08-17 (URL slug + search-result date)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-08-17/…` + multi-source confirmation (CNBC, Axios, UPI all dated 2026-08-17)
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday cited different Bloomberg article on Stripe/OpenRouter dated 2026-08-16)
+   - Verification: Tier 2 — WebSearch snippet (WEBFETCH_BLOCKED runtime)
+   - Summary: Nvidia agrees to back up to $105B financing for a new OpenAI-leased data-center campus in Pike County, Ohio (PORTS-Pike Technology Campus); SB Energy owns/builds, OpenAI leases 20 years, up to 8GW of compute with first 800MW online by 2028; OpenAI commits to Nvidia chips exclusively on-site. Jensen Huang pushed back on "circular financing" characterization: "OpenAI will pay the lease."
 
-2. **At AI-Fueled Market Party, Wall Street Eyes the Rates Punch Bowl**
+2. **China's open-weight AI models are prompting US players to reconsider their strategy**
+   - Publisher: Bloomberg (newsletter)
+   - URL: https://www.bloomberg.com/news/newsletters/2026-08-17/china-s-open-weight-ai-models-are-prompting-us-players-to-reconsider-their-strategy
+   - Published: 2026-08-17 (URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-08-17/…`
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: Two dozen US firms — including Nvidia, Microsoft, Meta, Hugging Face, and Andreessen Horowitz — warned regulators against "premature" restrictions on open-weight models as Chinese open-weight releases (notably Alibaba Qwen; Alibaba passed Google + Meta with 3B+ downloads) force a strategic rethink in Washington and among US labs.
+
+3. **Higgsfield raises $400M Series B, quadrupling its valuation in 8 months to $5.4B**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/08/17/higgsfield-raises-400m-series-b-quadrupling-its-valuation-in-8-months-to-5-4b/
+   - Published: 2026-08-17 (URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/08/17/…`
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: AI video-generation startup Higgsfield closes $400M Series B at $5.4B valuation (4× its $1.3B round eight months earlier), backed by Goldman Sachs, Intel, DST Global, and Liberty Global. Company claims $700M annualized revenue, 30M users across 200 countries, and 390 of the Fortune 500 as customers. Founded 2023 by ex-Snap AI chief Alex Mashrabov; premiered AI-generated films at Cannes and in NY.
+
+4. **Rival AI PACs Spend Big in Florida to Sway Trump's Governor Pick**
    - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-08-16/at-ai-fueled-market-party-wall-street-eyes-the-rates-punch-bowl
-   - Published: 2026-08-16 (URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-08-16/`
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (host matches yesterday but path differs)
-   - Verification: Tier 2 — WebSearch snippet from Bloomberg
-   - Summary: Enthusiasm for Big Tech's huge AI investments is powering stocks to record highs, and Bloomberg says the one obstacle that could derail the ride is higher interest rates. Tech valuations are especially rate-sensitive because AI capex "isn't expected to fully pay off for years."
-
-3. **The Beauty in Uniting Against AI Data Centers**
-   - Publisher: Bloomberg Opinion
-   - URL: https://www.bloomberg.com/opinion/newsletters/2026-08-16/the-beauty-in-uniting-against-ai-data-centers
-   - Published: 2026-08-16 (URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-08-16/`
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (opinion path is distinct from yesterday's articles paths)
-   - Verification: Tier 2 — WebSearch snippet from Bloomberg
-   - Summary: US opposition to water-guzzling, energy-intensive AI data-center projects is growing, and politicians across the red-blue spectrum are taking note. Bloomberg frames it as a rare bipartisan alignment against a specific class of AI infrastructure build-out.
+   - URL: https://www.bloomberg.com/news/articles/2026-08-17/rival-ai-pacs-spend-big-in-florida-to-sway-trump-s-governor-pick
+   - Published: 2026-08-17 (URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-08-17/…`
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: AI-industry political machines that have battled each other over AI regulation across US primaries are joining forces to make multimillion-dollar bets on the same candidate in Florida's governor race — an unusual alignment that suggests coalescing around a single AI-friendly champion in a high-signal state.
 
 ## Dropped
 
-- https://www.bloomberg.com/news/articles/2026-08-15/ai-chipflation-washes-ashore-in-the-uk-economy — Filter A (>24h): URL slug is 2026-08-15, outside the rolling 24h window for a 2026-08-17 run.
-- https://www.bloomberg.com/news/articles/2026-08-13/deepseek-increases-prices-for-ai-services-by-multiple-times — Filter A: URL slug 2026-08-13, 4 days old.
-- https://techcrunch.com/2026/08/11/anthropic-says-it-will-watermark-text-generated-by-its-ai-models/ — Filter A: URL slug 2026/08/11, 6 days old.
-- https://siliconangle.com/2026/08/10/meta-releases-open-source-muse-glimmer-model-30b-parameters/ — Filter A: 2026-08-10, >24h; also SiliconANGLE not on trusted list.
-- https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/ — kept as corroborating mirror for story #1; not counted as a separate item (same story, same URL-day). TechCrunch openly cites Bloomberg as the source, so per trusted-sources.md "Prefer the original publisher over an aggregator" the Bloomberg URL wins.
-- https://techcrunch.com/2026/08/16/techcrunch-mobility-the-shifting-flight-path-of-electric-air-taxis/ — Off-topic (electric air taxis / mobility, not AI).
-- https://www.blognone.com/node/151387 (Anthropic watermark explainer), node/151381 (Anthropic Q2 revenue), node/151375 (Anthropic Model 2) — snippet dates ambiguous; underlying events (watermark policy, Q2 numbers, risk report Model 2 disclosure) trace back to Aug 11–15 primary sources that fail Filter A. Dropped for safety rather than guess a Blognone publish date.
-- https://www.thairath.co.th/lottery/news/2952780 ("หวย AI" งวด 16 ส.ค. 2569) — Filter A satisfied but topical failure: this is a lottery-prediction feature, not AI news.
+- https://www.anthropic.com/aug-2026-risk-report — Filter A (>24h): coverage dated 2026-08-14/15 (SiliconANGLE 2026-08-14, TechTimes 2026-08-15) — outside rolling 24h window
+- https://techcrunch.com/2026/08/10/metas-new-glimmer-ai-model-offers-a-hint-at-zuckerbergs-personal-intelligence-vision/ — Filter A (>24h): URL slug 2026/08/10 (8 days old)
+- https://www.bloomberg.com/news/articles/2026-08-15/alibaba-ai-models-hit-3-billion-downloads-passing-meta-google — Filter A (>24h): URL slug 2026-08-15 (3 days old)
+- https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/ — Filter A (>24h): URL slug 2026/08/16 (>24h) AND same story already covered in yesterday's brief via Bloomberg URL
 
-> Note: 3 items passed both filters this run. Of ~14 credible candidates screened, ~7 failed Filter A (>24h), ~2 were topical mismatches, ~2 were mirrors of the same Aug 16 story kept as corroboration only, and ~2 were dropped for ambiguous timestamps we refused to guess. 0 failed Filter B (nothing overlapped yesterday's URL set).
+> Note: 4 items passed both filters this run. Of ~10 candidates surfaced, ~5 failed Filter A (older than 24h), 1 failed Filter B (same story as yesterday, different URL).
