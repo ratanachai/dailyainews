@@ -1,54 +1,57 @@
-# Sources — 2026-08-19
+# Sources — 2026-08-20
 
-Generated: 2026-08-19 (Asia/Bangkok)
-Runtime: WEBFETCH_BLOCKED (probe to example.com returned EGRESS_BLOCKED — all verification via Tier 2 WebSearch snippets from trusted-source domains)
+Generated: 2026-08-20 (Asia/Bangkok)
+Runtime: WEBFETCH_BLOCKED
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-08-18-brief.md (4 URLs loaded)
+Dedup against: articles/2026-08-19-brief.md (4 URLs loaded — all techcrunch.com/2026/08/18/*)
 
-1. **Cursor เปิดตัว Origin บริการโฮสต์ซอร์สโค้ดคู่แข่ง GitHub**
+1. **Google packs Search and Gemini with new AI study tools**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/08/18/cursor-capitalizes-on-github-frustration-launches-rival-hosting-platform/
-   - Published: 2026-08-18 (per URL slug `/2026/08/18/` + WebSearch snippet "Origin began rolling out on Monday in early beta")
-   - FreshnessCheck: ✅ within last 24h — URL slug embeds `2026/08/18`; corroborated by SiliconANGLE (2026/08/17), Adafruit blog (2026/08/18) hitting the same launch window
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — yesterday's brief did not cover Cursor at all
+   - URL: https://techcrunch.com/2026/08/19/google-launches-new-study-tools-for-students-across-search-and-gemini/
+   - Published: 2026-08-19 (per URL slug + WebSearch snippet "In an August 19 announcement, Google said…")
+   - FreshnessCheck: ✅ within last 24h — URL slug `/2026/08/19/` + snippet dates the announcement to Aug 19
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's set was all `/2026/08/18/` slugs; today's path differs)
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: Cursor launched Origin, a code-hosting platform in early beta on paid plans, with two-way GitHub sync and repos/PRs/checks designed for AI agents. The launch coincided with a 6h42m GitHub outage the same morning.
+   - Summary: Google launched AI-generated interactive visuals, 3D simulations, a student hub, custom practice quizzes across Search and Gemini; eligible U.S. college students get 1 year of Google AI Pro free (valued $19.99/mo, redeemable through Dec 31, 2026); students in 140+ markets outside the U.S. get 1 year of Google AI Plus. Gemini can now run multi-step research reports in Gemini Live that continue in the background and generate functional 3D simulations (e.g. "show me how DNA works in 3D").
 
-2. **OpenAI เปิดตัว ChatGPT for Teens สำหรับผู้ใช้อายุ 13-17 ปี**
+2. **Researchers say OpenAI revoked their access to limited cyber program**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/08/18/openai-launches-a-safer-chatgpt-for-teens-years-after-teens-started-using-it/
-   - Published: 2026-08-18 (per URL slug `/2026/08/18/`)
-   - FreshnessCheck: ✅ within last 24h — URL slug `2026/08/18`; corroborated by Washington Post (`/2026/08/18/`), CNN Business (`/2026/08/18/`), US News (`2026-08-18`), Axios (`/2026/08/18/`)
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — new topic
+   - URL: https://techcrunch.com/2026/08/19/researchers-complain-that-openai-revoked-their-access-to-limited-cyber-program/
+   - Published: 2026-08-19 (per URL slug + WebSearch snippet "On Wednesday, multiple researchers…")
+   - FreshnessCheck: ✅ within last 24h — URL slug `/2026/08/19/` + snippet phrasing "on Wednesday"
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (topic + path both new)
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: OpenAI rolled out a dedicated ChatGPT experience for users aged 13-17 with Study Mode, break reminders, parental Quiet Hours, and blocks on self-harm/violence/romantic-sexual content. Launched under legal pressure from lawsuits alleging harm to minors.
+   - Summary: On Wednesday, multiple researchers on OpenAI's official support forums and X reported their access to the Trusted Access for Cyber (TAC) program had been revoked — the ChatGPT Cyber page showed "identity could not be verified" or "ineligible at this time." OpenAI confirmed the issue was caused by a technical error and asked users to renew identity verification. TAC lets vetted researchers use frontier models (including GPT-5.6 Sol via the newly-launched Aug 10 "Daybreak Blue" tier) with safeguards tailored to defensive security work.
 
-3. **Perplexity เก็บผู้ใช้ India 14M/เดือน หลังจบดีลฟรีของ Airtel**
+3. **TerraPower's nuclear reactor has a secret weapon for powering AI data centers**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/08/18/perplexitys-free-ai-offer-left-it-with-millions-more-users-in-india/
-   - Published: 2026-08-18 (per URL slug `/2026/08/18/`)
-   - FreshnessCheck: ✅ within last 24h — URL slug `2026/08/18`; corroborated by theaiinsider.tech (`/2026/08/18/`)
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
+   - URL: https://techcrunch.com/2026/08/19/terrapowers-nuclear-reactor-has-a-secret-weapon-for-powering-ai-data-centers/
+   - Published: 2026-08-19 (per URL slug)
+   - FreshnessCheck: ✅ within last 24h — URL slug `/2026/08/19/`
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (topic + path both new)
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: Perplexity's yearlong Airtel free-Pro promo (started July 2025 for 360M subscribers) ended in early rollout waves; monthly net mobile revenue in India grew from ~$34K (Jan 2025) to $156K (Jul 2026), MAU 14M in July (down 37% from peak but 5× 1H 2025 average), with $878K generated in India in the first seven months of 2026.
+   - Summary: TerraPower (Bill Gates-founded) plans to announce its first data-center power plant this year — its second reactor overall, breaking ground in 2027 — with the Wyoming plant already under construction. The Natrium design keeps the reactor splitting atoms continuously while dumping excess heat into a giant vat of molten sodium; when data-center demand spikes, the reservoir generates extra steam so turbines can overshoot rated capacity, letting TerraPower amortize expensive nuclear equipment across more operating hours. Meta agreed in January to buy eight Natrium plants; the new customer was not named.
 
-4. **Apple หลุด video ใน macOS 26.7 RC เผย AirPods ติดกล้องต่อ Visual Intelligence**
+4. **Calendly throws its hat into meeting note-taker circus**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/08/18/why-apples-camera-equipped-airpods-may-not-be-the-pervert-pods-consumers-fear/
-   - Published: 2026-08-18 (per URL slug `/2026/08/18/`)
-   - FreshnessCheck: ✅ within last 24h — URL slug `2026/08/18`; corroborated by TechCrunch sibling piece (`/2026/08/18/apples-new-macos-update-reportedly-contains-a-video-of-airpods-with-a-camera/`)
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
+   - URL: https://techcrunch.com/2026/08/19/calendly-throws-its-hat-into-meeting-note-taker-circus/
+   - Published: 2026-08-19 (per URL slug + snippet "On Tuesday, Calendly announced Notetaker…")
+   - FreshnessCheck: ✅ within last 24h — URL slug `/2026/08/19/` + snippet "on Tuesday"
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (topic + path both new)
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: A leaked demo tucked into macOS Tahoe 26.7 RC shows Apple AirPods with outward-facing cameras feeding low-res imagery to Siri's new Visual Intelligence, with software-level camera-block warnings and a likely reveal at the iPhone 18 event next month.
+   - Summary: Calendly launched Notetaker and an AI assistant named Callie — Notetaker joins Zoom/Google Meet/Microsoft Teams calls to record audio/video, transcribe, summarize, extract action items and draft follow-up emails. Calendly's positioning bet: the differentiator isn't transcription (Granola, Fireflies, Read AI, Otter, Fathom, Notion, ClickUp, Wispr all do that) but the automated follow-up workflow after the call ends. Callie taps Calendly's existing scheduling and meeting stack to help set up meetings, check availability, and pull context from prior meetings.
+
+5. **Rillet raises $100M Series C at $1B valuation — 2 years after emerging from stealth**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/08/19/rillet-raises-100m-series-c-at-1b-valuation-2-years-after-emerging-from-stealth/
+   - Published: 2026-08-19 (per URL slug + snippet "announced … on Tuesday")
+   - FreshnessCheck: ✅ within last 24h — URL slug `/2026/08/19/` + snippet dates round to Tuesday
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (topic + path both new)
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: AI-native accounting/ERP startup Rillet closed a $100M Series C at a $1B valuation, led by ICONIQ with Sequoia, a16z, Sequoia Global Equities, Bain Capital Ventures, Oak HC/FT, Battery, FirstMark, Scale Venture Partners, Creandum. Rillet emerged from stealth in 2024, now has 600+ enterprise customers, doubled ARR in the last 3 months, and this is its third round in ~14 months (total funding >$200M). Product auto-pulls data from Salesforce, Brex and other systems to run continuous close.
 
 ## Dropped
+- https://www.anthropic.com/research/Claude-accelerates-protein-design — Filter A (>24h): published 2026-08-18 per multiple search results (blogsource + reactions from Adaptyv Bio + BigGo Finance); outside the 24h window from TODAY=2026-08-20 Asia/Bangkok.
+- https://www.blognone.com/node/151334 (Claude Code Auto Mode default) — Filter A (>24h): Blognone posted Aug 10, 2026; Anthropic's rollout began Aug 14; both outside 24h window.
 
-- https://www.blognone.com/node/151378 (Microsoft Copilot merger) — Filter A: publish date not surfaced in snippet; node position between confirmed Aug-15 and Aug-18 items suggests Aug 16-17 (>24h). Effective-date "Aug 18" in snippet is the change rollout, not publish date.
-- https://www.blognone.com/node/151344 (Anthropic watermark) — Filter A: publish date not surfaced; TechCrunch corroborating piece is dated 2026/08/15 (>24h old).
-- https://www.blognone.com/node/151406 (Blognone Thai coverage of ChatGPT for Teens) — Filter A: publish date not surfaced in snippet; conservative drop under "Date ambiguous → drop" rule despite node position suggesting Aug 18.
-- https://www.blognone.com/node/151403 (Blognone Thai coverage of Cursor Origin) — Filter A: publish date not surfaced; same reason as above.
-- Baidu Q2 2026 earnings — Filter A: only surfaced via non-trusted outlets (qz.com, cryptopolitan, thenextweb, gurufocus); no Reuters/Bloomberg/FT URL returned in this run's searches.
-- https://www.washingtonpost.com/... (WaPo ChatGPT for Teens) — publisher not on trusted-sources.md; TechCrunch coverage of the same story cited instead.
-- https://techcrunch.com/2026/08/13/microsoft-kills-off-unsuccessful-ai-features-while-merging-its-separate-copilot-apps/ — Filter A: URL slug `2026/08/13` is 6 days old.
-
-> Note: 4 items passed both filters this run. Only 3 international + 0 Thai in the final mix — Thai supply this cycle failed the strict "explicit publish timestamp" gate; shipped 4 English-language stories rather than loosen Filter A.
+> Note: 5 items passed both filters this run. Candidate pool was skewed toward TechCrunch's Aug 19 AI slate; two promising Thai-source stories (Blognone) failed Filter A on freshness. No dedup collisions with yesterday.
