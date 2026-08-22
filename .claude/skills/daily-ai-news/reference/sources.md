@@ -1,51 +1,53 @@
-# Sources — 2026-08-21
+# Sources — 2026-08-22
 
-Generated: 2026-08-21 (Asia/Bangkok)
+Generated: 2026-08-22 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-08-20-brief.md (5 URLs loaded)
+Dedup against: articles/2026-08-21-brief.md (4 URLs loaded)
 
-1. **Google gives publishers a new way to fight AI-driven traffic losses**
+1. **Nvidia partners with data center developer Cloverleaf**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/08/20/google-gives-publishers-a-new-way-to-fight-ai-driven-traffic-losses/
-   - Published: 2026-08-20 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug 2026/08/20 (yesterday in Bangkok)
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's TechCrunch URLs are all /2026/08/19/, this is /2026/08/20/)
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: Google threw support to publishers negatively impacted by AI continuing to kill traffic to websites.
+   - URL: https://techcrunch.com/2026/08/21/nvidia-partners-with-data-center-developer-cloverleaf/
+   - Published: 2026-08-21 (per URL slug + search snippet "announced on August 21, 2026")
+   - FreshnessCheck: ✅ within last 24h via URL slug `2026/08/21` and multiple corroborating snippets ("The partnership was announced on August 21, 2026", "Nvidia announced a partnership … on August 21, 2026").
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (all yesterday's URLs are dated `2026/08/20`; different slug and different topic).
+   - Verification: Tier 2 — WebSearch snippet (WEBFETCH_BLOCKED runtime)
+   - Summary: Nvidia takes a minority stake (WSJ-sized as "several hundred million dollars") in Cloverleaf Infrastructure, a two-year-old middleman between utilities and hyperscale sites; Cloverleaf will deploy Nvidia's DSX platform for AI-factory site/power/cooling decisions.
 
-2. **A third of web pages published since ChatGPT's launch show signs of AI authorship, study finds**
+2. **How AI accounting startup Rillet raised $100M and became a unicorn in 48 hours**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/08/20/a-third-of-webpages-published-since-chatgpts-launch-show-signs-of-ai-authorship-study-finds/
-   - Published: 2026-08-20 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug 2026/08/20
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
+   - URL: https://techcrunch.com/2026/08/21/how-ai-accounting-startup-rillet-raised-100m-and-became-a-unicorn-in-48-hours/
+   - Published: 2026-08-21 (per URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `2026/08/21`; snippet "AI accounting startup called Rillet announced a $100 million raise at a $1 billion valuation".
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS.
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: Over one-third of web pages published after the release of ChatGPT show signs of being written by AI, according to a new study from Pew Research released on Thursday.
+   - Summary: AI accounting startup Rillet closed a $100M round at a $1B valuation in 48 hours, joining a small cluster of AI SaaS unicorns crowned this quarter on the back of enterprise finance-automation demand.
 
-3. **Meta AI's new Mac app wants you to talk to your apps**
+3. **Apple is reportedly cutting hundreds of jobs from Siri, Vision Pro teams**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/08/20/meta-ais-new-mac-app-wants-you-to-talk-to-your-apps/
-   - Published: 2026-08-20 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug 2026/08/20
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
+   - URL: https://techcrunch.com/2026/08/21/apple-is-reportedly-cutting-hundreds-of-jobs-from-siri-vision-pro-teams/
+   - Published: 2026-08-21 (per URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `2026/08/21`; snippet "Apple is reportedly cutting hundreds of jobs from its Vision Pro team while eliminating positions across other teams".
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS.
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: Meta announced a new Mac app for Meta AI with built-in system-wide dictation that can look at the current screen and answer questions based on context using its Muse Spark model.
+   - Summary: Apple is reportedly cutting hundreds of roles across the Siri and Vision Pro teams — a signal that its consumer AI + spatial-computing bets are being right-sized amid the wider push to catch up on foundation-model quality.
 
-4. **ChatGPT can now send texts for you with new Apple Messages plug-in**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/08/20/chatgpt-can-now-send-texts-for-you-with-new-apple-messages-plugin/
-   - Published: 2026-08-20 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug 2026/08/20
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
+4. **[ไม่ยืนยัน] Anthropic อาจให้ลูกค้าองค์กรเก็บ log ใช้งานโมเดล AI ขั้นสูง 30 วัน ไว้ในคลาวด์ตนเองได้**
+   - Publisher: Blognone
+   - URL: https://www.blognone.com/node/151429
+   - Published: 2026-08-21 (per Blognone article listing)
+   - FreshnessCheck: ✅ within last 24h — search result specifies "posted on August 21, 2026 on Blognone".
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (Blognone URLs use `node/NNNNN` slugs; this id `151429` is not in yesterday's set).
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: OpenAI launched an Apple Messages plug-in for ChatGPT allowing users to connect their Messages app.
+   - Summary: Bloomberg-sourced report says Anthropic is preparing to let enterprise customers self-host the mandatory 30-day usage logs for advanced models (Fable 5 / Mythos 5) — a response to enterprise pushback on Anthropic's default retention for post-incident safety review.
 
-## Dropped
-- https://techcrunch.com/2026/08/20/there-are-less-than-48-hours-to-save-up-to-300-on-your-techcrunch-disrupt-2026-ticket/ — Editorial: TechCrunch Disrupt ticket sale promo, not real news
-- https://www.blognone.com/node/151401 (YouTube view counting) — Filter A: no explicit 24h timestamp; article date not confirmable as within rolling 24h from search snippet
-- https://www.blognone.com/node/151399 (GitHub outage 17 Aug) — Filter A: dated 2026-08-17, outside rolling 24h window
-- https://www.thairath.co.th/money/business_marketing/trends/2951131 (Huawei 5G-Advanced x Mobile AI Forum) — Filter A: snippet indicates "2 weeks ago", outside rolling 24h
-- https://thestandard.co/th-ai-passport-ai-critique/ — Filter A: no clear publish timestamp within rolling 24h from search snippet
+5. **ChatGPT บน Mac รองรับการอ่าน-ส่งข้อความ Apple Messages**
+   - Publisher: Blognone
+   - URL: https://www.blognone.com/node/151430
+   - Published: 2026-08-21 (per Blognone article listing)
+   - FreshnessCheck: ✅ within last 24h — search result specifies "published on August 21, 2026"; content covers Mac + iMessage/SMS/RCS support (distinct from yesterday's TechCrunch plug-in announcement).
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (Blognone node id `151430` is not in yesterday's set; yesterday's coverage cited the TechCrunch plug-in URL on the same theme).
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: The ChatGPT Mac app now reads and sends Apple Messages — iMessage, SMS, and RCS — a follow-on capability landing on macOS after the general plug-in story yesterday. Thai coverage adds regional framing on how the flow works and what it can access.
 
-> Note: 4 items passed both filters this run. Of ~9 candidates, 4 failed Filter A (too old / ambiguous timestamp), 0 failed Filter B, and 1 was dropped editorially (promo).
+> Note: 5 items passed both filters this run. Runtime was WEBFETCH_BLOCKED (probe to example.com returned egress_blocked; probe to techcrunch.com also returned egress_blocked). All verification is Tier 2 via WebSearch snippets from trusted-source domains.
