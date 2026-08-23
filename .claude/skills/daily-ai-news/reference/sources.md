@@ -1,53 +1,57 @@
-# Sources — 2026-08-22
+# Sources — 2026-08-23
 
-Generated: 2026-08-22 (Asia/Bangkok)
+Generated: 2026-08-23 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-08-21-brief.md (4 URLs loaded)
+Dedup against: articles/2026-08-22-brief.md (5 URLs loaded)
 
-1. **Nvidia partners with data center developer Cloverleaf**
+1. **Inherent AI 'teammate' outperforms Anthropic and OpenAI at replicating research**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/08/21/nvidia-partners-with-data-center-developer-cloverleaf/
-   - Published: 2026-08-21 (per URL slug + search snippet "announced on August 21, 2026")
-   - FreshnessCheck: ✅ within last 24h via URL slug `2026/08/21` and multiple corroborating snippets ("The partnership was announced on August 21, 2026", "Nvidia announced a partnership … on August 21, 2026").
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (all yesterday's URLs are dated `2026/08/20`; different slug and different topic).
+   - URL: https://techcrunch.com/2026/08/22/inherent-founded-by-deepmind-alumni-says-its-ai-teammate-just-outperformed-anthropic-and-openai-at-replicating-research/
+   - Published: 2026-08-22 (per URL slug + Google date-restricted snippet)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/08/22/` (24h window: 2026-08-22 → 2026-08-23 Asia/Bangkok)
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's TechCrunch items were all `/2026/08/21/` slugs)
    - Verification: Tier 2 — WebSearch snippet (WEBFETCH_BLOCKED runtime)
-   - Summary: Nvidia takes a minority stake (WSJ-sized as "several hundred million dollars") in Cloverleaf Infrastructure, a two-year-old middleman between utilities and hyperscale sites; Cloverleaf will deploy Nvidia's DSX platform for AI-factory site/power/cooling decisions.
+   - Summary: Inherent, a London AI lab founded by ex-Google-DeepMind researchers, claims its research-replication "AI teammate" outperformed much larger models from Anthropic and OpenAI at a fraction of the size.
 
-2. **How AI accounting startup Rillet raised $100M and became a unicorn in 48 hours**
+2. **OpenAI says California should strengthen its AI safety bill**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/08/21/how-ai-accounting-startup-rillet-raised-100m-and-became-a-unicorn-in-48-hours/
-   - Published: 2026-08-21 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `2026/08/21`; snippet "AI accounting startup called Rillet announced a $100 million raise at a $1 billion valuation".
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS.
+   - URL: https://techcrunch.com/2026/08/22/openai-says-california-should-strengthen-its-ai-safety-bill/
+   - Published: 2026-08-22 (per URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/08/22/`
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: AI accounting startup Rillet closed a $100M round at a $1B valuation in 48 hours, joining a small cluster of AI SaaS unicorns crowned this quarter on the back of enterprise finance-automation demand.
+   - Summary: OpenAI is calling on California to add stronger safeguards to a landmark AI safety bill passed last year — a notable reversal for a company that previously opposed similar state-level legislation.
 
-3. **Apple is reportedly cutting hundreds of jobs from Siri, Vision Pro teams**
+3. **Frontier AI labs still won't say how they'd contain a rogue model**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/08/21/apple-is-reportedly-cutting-hundreds-of-jobs-from-siri-vision-pro-teams/
-   - Published: 2026-08-21 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `2026/08/21`; snippet "Apple is reportedly cutting hundreds of jobs from its Vision Pro team while eliminating positions across other teams".
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS.
+   - URL: https://techcrunch.com/2026/08/22/frontier-ai-labs-still-wont-say-how-theyd-contain-a-rogue-model/
+   - Published: 2026-08-22 (per URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/08/22/`
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: Apple is reportedly cutting hundreds of roles across the Siri and Vision Pro teams — a signal that its consumer AI + spatial-computing bets are being right-sized amid the wider push to catch up on foundation-model quality.
+   - Summary: A recent study finds few of the top AI labs have published or demonstrated containment response plans for a rogue frontier model — a gap that has widened as capability has scaled.
 
-4. **[ไม่ยืนยัน] Anthropic อาจให้ลูกค้าองค์กรเก็บ log ใช้งานโมเดล AI ขั้นสูง 30 วัน ไว้ในคลาวด์ตนเองได้**
-   - Publisher: Blognone
-   - URL: https://www.blognone.com/node/151429
-   - Published: 2026-08-21 (per Blognone article listing)
-   - FreshnessCheck: ✅ within last 24h — search result specifies "posted on August 21, 2026 on Blognone".
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (Blognone URLs use `node/NNNNN` slugs; this id `151429` is not in yesterday's set).
+4. **Harvard's $699 startup bootcamp offers AI avatars of its instructors**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/08/22/harvards-699-startup-bootcamp-offers-ai-avatars-of-its-instructors/
+   - Published: 2026-08-22 (per URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/08/22/`
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: Bloomberg-sourced report says Anthropic is preparing to let enterprise customers self-host the mandatory 30-day usage logs for advanced models (Fable 5 / Mythos 5) — a response to enterprise pushback on Anthropic's default retention for post-incident safety review.
+   - Summary: Harvard Business School is using AI avatars — built by startup HeyGen — to provide individual feedback inside its eight-week, $699 HBS Foundry bootcamp for entrepreneurs.
 
-5. **ChatGPT บน Mac รองรับการอ่าน-ส่งข้อความ Apple Messages**
-   - Publisher: Blognone
-   - URL: https://www.blognone.com/node/151430
-   - Published: 2026-08-21 (per Blognone article listing)
-   - FreshnessCheck: ✅ within last 24h — search result specifies "published on August 21, 2026"; content covers Mac + iMessage/SMS/RCS support (distinct from yesterday's TechCrunch plug-in announcement).
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (Blognone node id `151430` is not in yesterday's set; yesterday's coverage cited the TechCrunch plug-in URL on the same theme).
+5. **Will the DOJ's investigation into a16z spook other VCs?**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/08/22/will-the-dojs-investigation-into-a16z-spook-other-vcs/
+   - Published: 2026-08-22 (per URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/08/22/`
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: The ChatGPT Mac app now reads and sends Apple Messages — iMessage, SMS, and RCS — a follow-on capability landing on macOS after the general plug-in story yesterday. Thai coverage adds regional framing on how the flow works and what it can access.
+   - Summary: The U.S. Department of Justice is reportedly investigating venture firm Andreessen Horowitz over its practice of holding board seats at rival AI companies — a probe that could reshape governance norms across the AI VC stack.
 
-> Note: 5 items passed both filters this run. Runtime was WEBFETCH_BLOCKED (probe to example.com returned egress_blocked; probe to techcrunch.com also returned egress_blocked). All verification is Tier 2 via WebSearch snippets from trusted-source domains.
+## Dropped
+
+- https://www.blognone.com/node/151436 — Filter A (timestamp ambiguous): search snippet did not surface an explicit publication timestamp; Blognone URLs do not embed dates in the slug; recency inferred from node-ID adjacency to yesterday's items (151429/151430) is a guess, not evidence. Drop per "Date ambiguous / not surfaced → drop (do not guess)".
+- https://www.blognone.com/node/151434 — Filter A (timestamp ambiguous): same as above. Substantive snippet available but no fetchable timestamp on `TODAY` within 24h. Drop.
+- https://techcrunch.com/2026/08/22/pixel-11-pro-xl-review-snappier-cameras-cant-hide-an-iterative-upgrade/ — deprioritised as a hardware review with only tangential AI angle (Gemini features); five stronger AI-primary items already selected.
