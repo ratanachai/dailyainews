@@ -1,0 +1,69 @@
+name: Pull thannob brief and notify LINE
+
+on:
+  schedule:
+    - cron: '0 1 * * *'   # 01:00 UTC daily = 08:00 Bangkok — ~35-45 min after thannob's run lands
+  workflow_dispatch:
+    inputs:
+      date:
+        description: 'Date to notify for, YYYY-MM-DD (defaults to today, Asia/Bangkok)'
+        required: false
+
+permissions:
+  contents: read
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Determine target date
+        id: date
+        run: |
+          TARGET="${{ github.event.inputs.date }}"
+          if [ -z "$TARGET" ]; then
+            TARGET=$(TZ=Asia/Bangkok date +%F)
+          fi
+          echo "target=$TARGET" >> "$GITHUB_OUTPUT"
+
+      - name: Fetch today's brief from thannob/dailyainews
+        env:
+          TARGET: ${{ steps.date.outputs.target }}
+        run: |
+          URL="https://raw.githubusercontent.com/thannob/dailyainews/main/articles/${TARGET}-brief.md"
+          echo "Fetching $URL"
+          HTTP_STATUS=$(curl -sS -o brief.md -w '%{http_code}' "$URL")
+          if [ "$HTTP_STATUS" != "200" ]; then
+            echo "No brief for $TARGET yet (status=$HTTP_STATUS). Exiting quietly."
+            echo "FOUND=0" >> "$GITHUB_ENV"
+          else
+            echo "FOUND=1" >> "$GITHUB_ENV"
+          fi
+
+      - name: Dispatch LINE notification
+        if: env.FOUND == '1'
+        env:
+          LINE_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
+          LINE_TO: ${{ secrets.LINE_TO }}
+          TARGET: ${{ steps.date.outputs.target }}
+        run: |
+          set -euo pipefail
+          if [ -z "${LINE_TOKEN:-}" ] || [ -z "${LINE_TO:-}" ]; then
+            echo "::warning::LINE secrets not set — skipping."
+            exit 0
+          fi
+          PERMALINK="https://github.com/thannob/dailyainews/blob/main/articles/${TARGET}-brief.md"
+          MESSAGE=$(python3 .github/scripts/build_line_message.py brief.md "$PERMALINK")
+          PAYLOAD=$(jq -n --arg to "$LINE_TO" --arg text "$MESSAGE" \
+            '{to:$to, messages:[{type:"text", text:$text}]}')
+          HTTP_STATUS=$(curl -sS -o /tmp/resp.txt -w '%{http_code}' \
+            -X POST https://api.line.me/v2/bot/message/push \
+            -H "Authorization: Bearer ${LINE_TOKEN}" \
+            -H "Content-Type: application/json" \
+            -d "$PAYLOAD")
+          echo "LINE API status: $HTTP_STATUS"; cat /tmp/resp.txt
+          if [ "$HTTP_STATUS" != "200" ]; then
+            echo "::error::LINE push failed"; exit 1
+          fi
+          echo "✅ LINE notification delivered."
