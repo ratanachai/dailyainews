@@ -2,7 +2,7 @@ name: Pull thannob brief and notify LINE
 
 on:
   schedule:
-    - cron: '0 1 * * *'   # 01:00 UTC daily = 08:00 Bangkok — ~35-45 min after thannob's run lands
+    - cron: '30 5 * * *'   # 05:30 UTC daily = 12:30 Bangkok
   workflow_dispatch:
     inputs:
       date:
