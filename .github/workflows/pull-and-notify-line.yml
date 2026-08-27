@@ -2,8 +2,8 @@ name: Pull thannob brief and notify LINE
 
 on:
   schedule:
-    - cron: '30 5 * * *'   # 05:30 UTC daily = 12:30 Bangkok (primary)
-    - cron: '30 6 * * *'   # 06:30 UTC daily = 13:30 Bangkok (backup — GitHub's schedule trigger is best-effort and occasionally drops a run; the dedup check below skips this if the primary already succeeded today)
+    - cron: '0 5 * * *'   # 05:00 UTC daily = 12:00 Bangkok (primary)
+    - cron: '0 6 * * *'   # 06:00 UTC daily = 13:00 Bangkok (backup — GitHub's schedule trigger is best-effort and occasionally drops a run; the dedup check below skips this if the primary already succeeded today)
   workflow_dispatch:
     inputs:
       date:
