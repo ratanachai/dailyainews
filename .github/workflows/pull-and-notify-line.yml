@@ -2,7 +2,8 @@ name: Pull thannob brief and notify LINE
 
 on:
   schedule:
-    - cron: '30 5 * * *'   # 05:30 UTC daily = 12:30 Bangkok
+    - cron: '30 5 * * *'   # 05:30 UTC daily = 12:30 Bangkok (primary)
+    - cron: '30 6 * * *'   # 06:30 UTC daily = 13:30 Bangkok (backup — GitHub's schedule trigger is best-effort and occasionally drops a run; the dedup check below skips this if the primary already succeeded today)
   workflow_dispatch:
     inputs:
       date:
@@ -11,6 +12,7 @@ on:
 
 permissions:
   contents: read
+  actions: read
 
 jobs:
   notify:
@@ -27,7 +29,33 @@ jobs:
           fi
           echo "target=$TARGET" >> "$GITHUB_OUTPUT"
 
+      - name: Skip if already notified today (schedule dedup)
+        id: dedup
+        if: github.event_name == 'schedule'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TARGET: ${{ steps.date.outputs.target }}
+        run: |
+          set -euo pipefail
+          # Look for an earlier *successful* run of this workflow (schedule or
+          # manual — either counts as "already notified") whose creation date,
+          # in Bangkok time, matches today's target date. If found, this run
+          # (the backup trigger) skips fetching/sending to avoid a duplicate.
+          RUNS=$(gh api "repos/${{ github.repository }}/actions/workflows/pull-and-notify-line.yml/runs?status=success&per_page=10" \
+            --jq '.workflow_runs[] | select(.id != ${{ github.run_id }}) | .created_at')
+          SKIP=0
+          for ts in $RUNS; do
+            RUN_DATE=$(TZ=Asia/Bangkok date -d "$ts" +%F)
+            if [ "$RUN_DATE" == "$TARGET" ]; then
+              echo "Already notified today at $ts — skipping this (backup) run."
+              SKIP=1
+              break
+            fi
+          done
+          echo "skip=$SKIP" >> "$GITHUB_OUTPUT"
+
       - name: Fetch today's brief from thannob/dailyainews
+        if: steps.dedup.outputs.skip != '1'
         env:
           TARGET: ${{ steps.date.outputs.target }}
         run: |
@@ -42,7 +70,7 @@ jobs:
           fi
 
       - name: Dispatch LINE notification
-        if: env.FOUND == '1'
+        if: steps.dedup.outputs.skip != '1' && env.FOUND == '1'
         env:
           LINE_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
           LINE_TO: ${{ secrets.LINE_TO }}
