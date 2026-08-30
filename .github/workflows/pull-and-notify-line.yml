@@ -3,16 +3,19 @@ name: Pull thannob brief and notify LINE
 on:
   schedule:
     - cron: '0 5 * * *'   # 05:00 UTC daily = 12:00 Bangkok (primary)
-    - cron: '0 6 * * *'   # 06:00 UTC daily = 13:00 Bangkok (backup — GitHub's schedule trigger is best-effort and occasionally drops a run; the dedup check below skips this if the primary already succeeded today)
+    - cron: '0 6 * * *'   # 06:00 UTC daily = 13:00 Bangkok (backup — GitHub's schedule trigger is best-effort and has been observed dropping/delaying runs by hours)
   workflow_dispatch:
     inputs:
       date:
-        description: 'Date to notify for, YYYY-MM-DD (defaults to today, Asia/Bangkok)'
+        description: 'Date to notify for, YYYY-MM-DD (defaults to catching up the oldest un-notified day)'
         required: false
 
 permissions:
-  contents: read
-  actions: read
+  contents: write   # needed to commit the last-notified marker after a successful send
+
+concurrency:
+  group: pull-and-notify-line
+  cancel-in-progress: false   # let the primary/backup pair queue instead of racing each other
 
 jobs:
   notify:
@@ -23,39 +26,47 @@ jobs:
       - name: Determine target date
         id: date
         run: |
-          TARGET="${{ github.event.inputs.date }}"
+          set -euo pipefail
+          INPUT_DATE="${{ github.event.inputs.date }}"
+          if [ -n "$INPUT_DATE" ]; then
+            echo "target=$INPUT_DATE" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          # Catch-up loop: find the oldest day after the last confirmed
+          # notification whose brief is published, capped at "today"
+          # (Bangkok). This is deliberately anchored to the last known-good
+          # day rather than wall-clock "today" alone — a scheduled run that
+          # fires hours late (crossing midnight Bangkok) must not silently
+          # ask for a not-yet-published "tomorrow" and skip a real day.
+          STATE_FILE=.github/state/last-notified.txt
+          if [ -f "$STATE_FILE" ]; then
+            LAST=$(cat "$STATE_FILE")
+          else
+            LAST=$(TZ=Asia/Bangkok date -d yesterday +%F)
+          fi
+          TODAY=$(TZ=Asia/Bangkok date +%F)
+          CANDIDATE=$(TZ=Asia/Bangkok date -d "$LAST + 1 day" +%F)
+
+          TARGET=""
+          while [[ "$CANDIDATE" < "$TODAY" || "$CANDIDATE" == "$TODAY" ]]; do
+            STATUS=$(curl -sS -o /dev/null -w '%{http_code}' \
+              "https://raw.githubusercontent.com/thannob/dailyainews/main/articles/${CANDIDATE}-brief.md")
+            if [ "$STATUS" == "200" ]; then
+              TARGET="$CANDIDATE"
+              break
+            fi
+            CANDIDATE=$(TZ=Asia/Bangkok date -d "$CANDIDATE + 1 day" +%F)
+          done
+
           if [ -z "$TARGET" ]; then
-            TARGET=$(TZ=Asia/Bangkok date +%F)
+            echo "No un-notified brief published yet (checked $LAST+1 through $TODAY)."
+            exit 0
           fi
           echo "target=$TARGET" >> "$GITHUB_OUTPUT"
 
-      - name: Skip if already notified today (schedule dedup)
-        id: dedup
-        if: github.event_name == 'schedule'
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          TARGET: ${{ steps.date.outputs.target }}
-        run: |
-          set -euo pipefail
-          # Look for an earlier *successful* run of this workflow (schedule or
-          # manual — either counts as "already notified") whose creation date,
-          # in Bangkok time, matches today's target date. If found, this run
-          # (the backup trigger) skips fetching/sending to avoid a duplicate.
-          RUNS=$(gh api "repos/${{ github.repository }}/actions/workflows/pull-and-notify-line.yml/runs?status=success&per_page=10" \
-            --jq '.workflow_runs[] | select(.id != ${{ github.run_id }}) | .created_at')
-          SKIP=0
-          for ts in $RUNS; do
-            RUN_DATE=$(TZ=Asia/Bangkok date -d "$ts" +%F)
-            if [ "$RUN_DATE" == "$TARGET" ]; then
-              echo "Already notified today at $ts — skipping this (backup) run."
-              SKIP=1
-              break
-            fi
-          done
-          echo "skip=$SKIP" >> "$GITHUB_OUTPUT"
-
-      - name: Fetch today's brief from thannob/dailyainews
-        if: steps.dedup.outputs.skip != '1'
+      - name: Fetch brief from thannob/dailyainews
+        if: steps.date.outputs.target != ''
         env:
           TARGET: ${{ steps.date.outputs.target }}
         run: |
@@ -63,14 +74,14 @@ jobs:
           echo "Fetching $URL"
           HTTP_STATUS=$(curl -sS -o brief.md -w '%{http_code}' "$URL")
           if [ "$HTTP_STATUS" != "200" ]; then
-            echo "No brief for $TARGET yet (status=$HTTP_STATUS). Exiting quietly."
+            echo "::warning::Brief for $TARGET disappeared between check and fetch (status=$HTTP_STATUS)."
             echo "FOUND=0" >> "$GITHUB_ENV"
           else
             echo "FOUND=1" >> "$GITHUB_ENV"
           fi
 
       - name: Dispatch LINE notification
-        if: steps.dedup.outputs.skip != '1' && env.FOUND == '1'
+        if: steps.date.outputs.target != '' && env.FOUND == '1'
         env:
           LINE_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
           LINE_TO: ${{ secrets.LINE_TO }}
@@ -95,3 +106,25 @@ jobs:
             echo "::error::LINE push failed"; exit 1
           fi
           echo "✅ LINE notification delivered."
+
+      - name: Record notified date
+        if: steps.date.outputs.target != '' && env.FOUND == '1'
+        env:
+          TARGET: ${{ steps.date.outputs.target }}
+        run: |
+          set -euo pipefail
+          mkdir -p .github/state
+          echo "$TARGET" > .github/state/last-notified.txt
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .github/state/last-notified.txt
+          if git diff --cached --quiet; then
+            echo "State already up to date."
+            exit 0
+          fi
+          git commit -m "chore(state): mark $TARGET as notified [skip line]"
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push origin HEAD:main && break
+            echo "Push attempt $i failed, retrying..."
+            sleep $((i * 5))
+          done
